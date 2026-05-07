@@ -18,7 +18,7 @@ sockaddr_in configurarServidor(const char* ip, int puerto) {
     servaddr.sin_family = AF_INET;
     servaddr.sin_port = htons(puerto);
     if (inet_pton(AF_INET, ip, &servaddr.sin_addr) <= 0) {
-        cerr << "Direccion IP invalida" << endl;
+        cerr << "Direccion IP iNvalida" << endl;
         exit(1);
     }
     return servaddr;
