@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "compilando clieente..."
+echo "compilando cliente..."
 g++ src/cliente.cpp -o cliente
 if [ $? -eq 0 ]; then
     echo "compilacion correcta"
