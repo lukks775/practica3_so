@@ -56,7 +56,7 @@ f.close();
 
 //muestra por la pantalla los datos recibidos
 void imprimirDatos(vector<unsigned char> &datos){
-cout<<"Datos recibidos:"<<endl;
+cout<<"Datoos recibidos:"<<endl;
 for(unsigned char f:datos){
 cout<<(int)f<<endl;
 }
