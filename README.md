@@ -7,40 +7,39 @@ Sistemas Operativos
 
 # Descripcion
 
-Este proyecto consiste en el desarrollo de una aplicacion cliente-servidor utilizando sockets TCP/IP.
+Este proyecto consiste en aprender a desarrollar un cliente que pueda conectarse al servidor, recibir datos en tiempo real y almacenarlos en un archivo local.
 
-El servidor, implementado en Python, simula el comportamiento de una cámara térmica industrial que envía datos de temperatura al cliente mediante comunicación TCP/IP.
+El servidor en Python simula el comportamiento de una camara termica industrial que envia datos de temperatura al cliente a traves de una comunicacion TCP/IP.
 
-El cliente, desarrollado en C++, recibe dichos datos usando sockets, los almacena en memoria mediante vectores dinámicos y posteriormente los guarda en un archivo local.
-
----
-
-# Objetivos de la práctica
-
-- Comprender el funcionamiento del modelo cliente-servidor
-- Implementar comunicación TCP/IP mediante sockets
-- Utilizar sockets en C++
-- Recibir datos desde un servidor remoto
-- Almacenar información en estructuras dinámicas
-- Guardar datos en archivos de texto
-- Automatizar la ejecución mediante Bash
-- Utilizar Git y GitHub para organización del proyecto
+El cliente en C++ recibe los datos usando sockets, los almacena en memoria usando vectores dinamicos y despues los guarda en un archivo local.
 
 ---
 
-# Tecnologías utilizadas
+# Objetivos de la practica:
+
+- Comprender el modelo cliente-servidor
+- Establecer comunicación TCP/IP mediante sockets
+- Utilizar programas de comunicaion en C++
+- Recibir datos desde un sensor remoto
+- Almacenar información en archivos
+- Implementar control basico de errores en comunicaiones
+- Utilizar GitHub para organizar el proyecto
+
+---
+
+# Tecnologias usadas
 
 - C++
 - Python
 - Sockets TCP/IP
 - Bash
-- Git
 - GitHub
-- Linux / WSL Ubuntu
+- WSL Ubuntu
 
 ---
 
 # Estructura del proyecto
+(esquema generado con IA)
 
 ```text
 practica3-sockets-cpp/
@@ -90,41 +89,40 @@ Servidor Python → Socket TCP/IP → Cliente C++ → Archivo local
 
 ## Cliente C++
 
-- Creación de socket TCP/IP
-- Configuración de IP y puerto
-- Conexión con servidor
-- Recepción de datos mediante `recv()`
-- Uso de vectores dinámicos
+- Creacion de socket TCP/IP
+- Configuracion de IP y puerto
+- Conexion con servidor
+- Recibir de datos mediante `recv()`
+- Uso de vectores dinamicos
 - Escritura de archivos mediante `ofstream`
-- Impresión de resultados
-- Modularización mediante funciones
-- Control básico de errores
+- Impresion de resultados
+- Control basico de errores
 
 ---
 
 ## Servidor Python
 
-- Creación de socket servidor
+- Creacion de socket servidor
 - Espera de conexiones
-- Envío de datos simulados
-- Comunicación TCP/IP
+- Envio de datos simulados
+- Comunicaion TCP/IP
 
 ---
 
 # Funciones implementadas en el cliente
 
-| Función | Descripción |
+| Funcion | Descripcion |
 |---|---|
 | `crearSocket()` | Crea el socket TCP/IP |
 | `configurarServidor()` | Configura IP y puerto |
-| `conectarServidor()` | Realiza la conexión |
+| `conectarServidor()` | Realiza la conexion |
 | `recibirDatos()` | Recibe datos mediante recv() |
 | `guardarDatos()` | Guarda datos en archivo |
 | `imprimirDatos()` | Muestra resultados |
 
 ---
 
-# Compilación y ejecución
+# Compilacion y ejecución
 
 ## 1. Ejecutar servidor
 
@@ -163,13 +161,13 @@ Este archivo contiene todos los datos recibidos desde el servidor.
 # Script Bash
 
 El archivo `run.sh` automatiza:
-- compilación del cliente
-- ejecución del programa
-- control básico de errores
+- compilacion del cliente
+- ejecucion del programa
+- control basico de errores
 
 ---
 
-# Capturas de ejecución
+# Capturas de ejecucion
 
 Las capturas del funcionamiento del proyecto se encuentran en:
 
@@ -181,7 +179,7 @@ screenshots/
 
 # Resultados obtenidos
 
-El cliente logró conectarse correctamente al servidor mediante sockets TCP/IP.
+El cliente logro conectarse correctamente al servidor mediante sockets TCP/IP.
 
 Los datos enviados por el servidor fueron:
 - recibidos correctamente
@@ -189,27 +187,25 @@ Los datos enviados por el servidor fueron:
 - escritos en archivo
 - mostrados por pantalla
 
-La comunicación cliente-servidor funcionó correctamente.
+La comunicacion cliente-servidor funciono correctamente.
 
 ---
 
 # Conclusiones
 
-Mediante esta práctica se logró comprender el funcionamiento básico de la comunicación cliente-servidor utilizando sockets TCP/IP.
+Con esta practica comprendimos el funcionamiento basico de la comunicacion cliente-servidor utilizando sockets TCP/IP.
 
-También se aplicaron conceptos importantes relacionados con:
-- programación en C++
-- comunicación en red
-- gestión de archivos
-- modularización
-- automatización mediante Bash
-- control de versiones con Git y GitHub
+Tambien se aplicaron conceptos importantes relacionados con:
+- programacion en C++
+- comunicacion en red
+- gestion de archivos
+- automatizacion con Bash
 
-La práctica permitió simular un entorno similar a sistemas industriales reales basados en monitorización remota y transmisión de datos.
+Conseguimos simular un entorno similar a sistemas industriales reales basados en monitorizacion remota y transmision de datos.
 
 ---
 
 # Autores
 
-- Nombre Apellido
-- Nombre Apellido
+- Lucia Castellanos Paz
+- Ander Zuazquita Pastor
