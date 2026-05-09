@@ -3,6 +3,9 @@
 ## Asignatura
 Sistemas Operativos
 
+# Enlace al repositorio Git
+https://github.com/lukks775/practica3_so.git
+
 ---
 
 # Descripcion
